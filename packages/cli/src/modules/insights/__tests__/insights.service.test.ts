@@ -505,7 +505,6 @@ describe('getAvailableDateRanges', () => {
 			mock<InsightsCollectionService>(),
 			mock<InsightsPruningService>(),
 			licenseMock,
-			mock<InsightsConfig>(),
 			mockLogger(),
 		);
 	});
@@ -608,7 +607,6 @@ describe('getMaxAgeInDaysAndGranularity', () => {
 			mock<InsightsCollectionService>(),
 			mock<InsightsPruningService>(),
 			licenseMock,
-			mock<InsightsConfig>(),
 			mockLogger(),
 		);
 	});
@@ -697,7 +695,6 @@ describe('shutdown', () => {
 			mockCollectionService,
 			mockPruningService,
 			mock<LicenseState>(),
-			mock<InsightsConfig>(),
 			mockLogger(),
 		);
 	});
@@ -743,7 +740,6 @@ describe('timers', () => {
 			mockCollectionService,
 			mockPruningService,
 			mock<LicenseState>(),
-			mockedConfig,
 			mockedLogger,
 		);
 	});
